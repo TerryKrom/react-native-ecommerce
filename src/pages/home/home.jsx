@@ -1,17 +1,21 @@
 import React from 'react';
-import { View, Text, Pressable, TouchableOpacity } from 'react-native';
+import { View, Text, Pressable, Image } from 'react-native';
 import Header from '../../components/header/header';
+import styles from './styles';
+import { SafeAreaView, StyleSheet } from 'react-native'
+import CarouselCards from '../../components/carouselCards'
 
 const Home = ({ navigation }) => {
-  return (  
+  return (
     <View>
       <Header navigation={navigation} />
-      <Text>Home</Text>
-      <TouchableOpacity style={{backgroundColor: "#0787ea", width: 100, margin: "auto"}} onPress={() => navigation.navigate("Products")}>
-        <Text>See Products</Text>
-      </TouchableOpacity>
+      <View>
+        <SafeAreaView>
+          <CarouselCards />
+        </SafeAreaView>
+      </View>
     </View>
   );
 }
- 
+
 export default Home;

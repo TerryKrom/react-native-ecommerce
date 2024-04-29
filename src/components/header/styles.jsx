@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 45,
         flexDirection: 'row',
-        marginTop: 32,
+        padding: 60,
     },
     div: {
         flex: 1,
@@ -44,7 +44,21 @@ const styles = StyleSheet.create({
     icon: {
         color: "#FFFFFF",
         marginLeft: 30,
-        fontSize: 20
+        fontSize: 50
+    },
+    menu: {
+        width: 150,
+        height: 300,
+        backgroundColor: '#0787ea',
+        position: 'absolute',
+        top: 120,
+        left: 0,
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        zIndex: 99,
+        transition: '0.2s linear'
     }
 })
 
